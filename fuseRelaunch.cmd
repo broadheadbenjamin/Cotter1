@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/CS 3710/Cotter1 Project/Cotter1/testingMDIO_isim_beh.exe" -prj "F:/CS 3710/Cotter1 Project/Cotter1/testingMDIO_beh.prj" "work.testingMDIO" "work.glbl" 

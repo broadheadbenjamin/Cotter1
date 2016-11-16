@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Oct 21 15:12:12 2016
+# Process ID: 7464
+# Log file: H:/CS 3710/Cotter1 Project/Cotter1/planAhead_run_1/planAhead.log
+# Journal file: H:/CS 3710/Cotter1 Project/Cotter1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {H:/CS 3710/Cotter1 Project/Cotter1/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin V10 [get_ports CLK]
+endgroup
+set_property package_pin "" [get_ports [list  reset]]
+set_property package_pin "" [get_ports [list  Hsync]]
+startgroup
+set_property package_pin A8 [get_ports {leds[7]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {leds[6]}]
+endgroup
+set_property package_pin "" [get_ports [list  {leds[5]}]]
+startgroup
+set_property package_pin T11 [get_ports {leds[7]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {leds[6]}]
+endgroup
+startgroup
+set_property package_pin A8 [get_ports {buttons[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {buttons[1]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports {buttons[2]}]
+endgroup
+startgroup
+set_property package_pin D9 [get_ports {buttons[3]}]
+endgroup

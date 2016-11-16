@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="switchs">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="buttons">
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="leds">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="vgaRed">
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="vgaGreen">
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="vgaBlue">
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="reset" Dir="IN"/>
+		<Port Id="sevenSeg1" Dir="OUT"/>
+		<Port Id="sevenSeg2" Dir="OUT"/>
+		<Port Id="sevenSeg3" Dir="OUT"/>
+		<Port Id="sevenSeg4" Dir="OUT"/>
+		<Port Id="sevenSegP" Dir="OUT"/>
+		<Port Id="sevenSegA" Dir="OUT"/>
+		<Port Id="sevenSegB" Dir="OUT"/>
+		<Port Id="sevenSegC" Dir="OUT"/>
+		<Port Id="sevenSegD" Dir="OUT"/>
+		<Port Id="sevenSegE" Dir="OUT"/>
+		<Port Id="sevenSegF" Dir="OUT"/>
+		<Port Id="sevenSegG" Dir="OUT"/>
+		<Port Id="Hsync" Dir="OUT"/>
+		<Port Id="Vsync" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

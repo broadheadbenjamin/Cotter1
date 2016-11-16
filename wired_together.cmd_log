@@ -1,0 +1,311 @@
+xst -intstyle ise -ifn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.xst" -ofn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.xst" -ofn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.xst" -ofn "/home/tonym/Desktop/CS 3710/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-tqg144-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-tqg144-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "H:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+xst -intstyle ise -ifn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.xst" -ofn "F:/CS 3710/Cotter1 Project/Cotter1/wired_together.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc wired_together.ucf -p xc6slx16-csg324-3 "wired_together.ngc" wired_together.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wired_together_map.ncd wired_together.ngd wired_together.pcf 
+par -w -intstyle ise -ol high -mt off wired_together_map.ncd wired_together.ncd wired_together.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wired_together.twx wired_together.ncd -o wired_together.twr wired_together.pcf -ucf wired_together.ucf 
+bitgen -intstyle ise -f wired_together.ut wired_together.ncd 

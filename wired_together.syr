@@ -1,0 +1,1289 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: wired_together.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "wired_together.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "wired_together"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : wired_together
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\mdCLK_gen.v" into library work
+Parsing module <mdCLK_gen>.
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\mdCLK_gen.v" Line 26: Redeclaration of ansi port mdCLK is not allowed
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v" into library work
+Parsing module <mdioControl>.
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v" Line 33: Redeclaration of ansi port from_MDI is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v" Line 38: Redeclaration of ansi port ready is not allowed
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\ipcore_dir\MemoryCore.v" into library work
+Parsing module <MemoryCore>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\vgaSource.v" into library work
+Parsing module <vgaSource>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\sevenSegmenDisplay.v" into library work
+Parsing module <sevenSegmenDisplay>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" into library work
+Parsing module <phy_controller>.
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 48: Redeclaration of ansi port transmit is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 50: Redeclaration of ansi port trans_error is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 51: Redeclaration of ansi port trans_enabled is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 52: Redeclaration of ansi port reset is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 54: Redeclaration of ansi port toMemory is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 55: Redeclaration of ansi port readLocation is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 56: Redeclaration of ansi port writeLocation is not allowed
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 57: Redeclaration of ansi port write is not allowed
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\Debouncer.v" into library work
+Parsing module <Debouncer>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v" into library work
+Parsing module <CPU_Set>.
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v" Line 79: Redeclaration of ansi port write_memory is not allowed
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\Control.v" into library work
+Parsing module <Control>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\bin16ToBCD.v" into library work
+Parsing module <bin16ToBCD>.
+Analyzing Verilog file "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" into library work
+Parsing module <wired_together>.
+WARNING:HDLCompiler:751 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 73: Redeclaration of ansi port data_out is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <wired_together>.
+
+Elaborating module <Debouncer>.
+
+Elaborating module <sevenSegmenDisplay>.
+
+Elaborating module <bin16ToBCD>.
+WARNING:HDLCompiler:1127 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 104: Assignment to extraBits ignored, since the identifier is never used
+
+Elaborating module <vgaSource>.
+
+Elaborating module <CPU_Set>.
+WARNING:HDLCompiler:1127 - "F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v" Line 95: Assignment to right_servo ignored, since the identifier is never used
+
+Elaborating module <phy_controller>.
+WARNING:HDLCompiler:872 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 49: Using initial value of phase since it is never assigned
+
+Elaborating module <mdioControl>.
+
+Elaborating module <mdCLK_gen>.
+WARNING:HDLCompiler:1127 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 62: Assignment to from_MDI ignored, since the identifier is never used
+WARNING:HDLCompiler:295 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 114: case condition never applies
+
+Elaborating module <Control>.
+
+Elaborating module <MemoryCore>.
+WARNING:HDLCompiler:1499 - "F:\CS 3710\Cotter1 Project\Cotter1\ipcore_dir\MemoryCore.v" Line 39: Empty module <MemoryCore> remains a black box.
+WARNING:HDLCompiler:634 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 74: Net <camera[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 75: Net <move_command[15]> does not have a driver.
+WARNING:Xst:2972 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 95. All outputs of instance <debouncerbt1> of block <Debouncer> are unconnected in block <wired_together>. Underlying logic will be removed.
+WARNING:Xst:2972 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 96. All outputs of instance <debouncerbt2> of block <Debouncer> are unconnected in block <wired_together>. Underlying logic will be removed.
+WARNING:Xst:2972 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 97. All outputs of instance <debouncerbt3> of block <Debouncer> are unconnected in block <wired_together>. Underlying logic will be removed.
+WARNING:Xst:2972 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 98. All outputs of instance <debouncerbt4> of block <Debouncer> are unconnected in block <wired_together>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <wired_together>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v".
+        tenMillion = 25'b0100110001001011010000000
+        sevenSegFreqCounter = 10'b1111111111
+WARNING:Xst:647 - Input <CLK25> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 95: Output port <wireOut> of the instance <debouncerbt1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 96: Output port <wireOut> of the instance <debouncerbt2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 97: Output port <wireOut> of the instance <debouncerbt3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 98: Output port <wireOut> of the instance <debouncerbt4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" line 104: Output port <tenThousands> of the instance <timerToDec> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <camera> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <move_command> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 11-bit register for signal <slowSeg>.
+    Found 2-bit register for signal <segCounter>.
+    Found 16-bit register for signal <timerCount>.
+    Found 24-bit register for signal <milDiv>.
+    Found 11-bit adder for signal <slowSeg[10]_GND_1_o_add_11_OUT> created at line 201.
+    Found 2-bit adder for signal <segCounter[1]_GND_1_o_add_13_OUT> created at line 205.
+    Found 16-bit adder for signal <timerCount[15]_GND_1_o_add_19_OUT> created at line 222.
+    Found 24-bit adder for signal <milDiv[23]_GND_1_o_add_21_OUT> created at line 228.
+    Found 4x4-bit Read Only RAM for signal <_n0110>
+    Found 16-bit 8-to-1 multiplexer for signal <deSwitchs[2]_outReg[127]_wide_mux_8_OUT> created at line 180.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <wired_together> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\Debouncer.v".
+        oneHundredThousand = 18'b011000011010100000
+    Found 17-bit register for signal <counter>.
+    Found 1-bit register for signal <wireOut>.
+    Found 1-bit register for signal <currentState>.
+    Found 17-bit adder for signal <counter[16]_GND_2_o_add_4_OUT> created at line 43.
+    Found 17-bit comparator greater for signal <PWR_2_o_counter[16]_LessThan_2_o> created at line 34
+    Found 1-bit comparator equal for signal <n0003> created at line 42
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <sevenSegmenDisplay>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\sevenSegmenDisplay.v".
+    Found 4-bit 4-to-1 multiplexer for signal <character> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <sevenSegmenDisplay> synthesized.
+
+Synthesizing Unit <bin16ToBCD>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\bin16ToBCD.v".
+        four = 5'b00100
+    Found 4-bit adder for signal <n0178> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_4_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_7_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_10_OUT> created at line 29.
+    Found 4-bit adder for signal <n0191> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_16_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_19_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_22_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_25_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_28_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_31_OUT> created at line 31.
+    Found 4-bit adder for signal <n0213> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_37_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_40_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_43_OUT> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_46_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_49_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_52_OUT> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_55_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_58_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_61_OUT> created at line 33.
+    Found 4-bit adder for signal <n0244> created at line 35.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_67_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_70_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_73_OUT> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_76_OUT> created at line 35.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_79_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_82_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_85_OUT> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_88_OUT> created at line 35.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_91_OUT> created at line 29.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_94_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_97_OUT> created at line 33.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_100_OUT> created at line 35.
+    Found 4-bit adder for signal <n0284> created at line 37.
+    Found 3-bit comparator greater for signal <PWR_4_o_binNum[15]_LessThan_1_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_4_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_7_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_10_o> created at line 28
+    Found 3-bit comparator greater for signal <PWR_4_o_GND_4_o_LessThan_13_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_16_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_19_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_22_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_25_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_28_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_31_o> created at line 30
+    Found 3-bit comparator greater for signal <PWR_4_o_GND_4_o_LessThan_34_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_37_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_40_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_43_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_46_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_49_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_52_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_55_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_58_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_61_o> created at line 32
+    Found 3-bit comparator greater for signal <PWR_4_o_GND_4_o_LessThan_64_o> created at line 34
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_67_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_70_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_73_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_76_o> created at line 34
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_79_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_82_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_85_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_88_o> created at line 34
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_91_o> created at line 28
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_94_o> created at line 30
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_97_o> created at line 32
+    Found 4-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_100_o> created at line 34
+    Found 3-bit comparator greater for signal <PWR_4_o_GND_4_o_LessThan_103_o> created at line 36
+    Summary:
+	inferred  35 Adder/Subtractor(s).
+	inferred  35 Comparator(s).
+	inferred  35 Multiplexer(s).
+Unit <bin16ToBCD> synthesized.
+
+Synthesizing Unit <vgaSource>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\vgaSource.v".
+        endVertVisRange = 9'b111100000
+        vertReset = 10'b1000001011
+        beginVSync = 9'b111101010
+        endVSync = 9'b111101101
+        endHorVisRange = 10'b1010000000
+        horReset = 10'b1100011111
+        beginHSync = 10'b1010001111
+        endHSync = 10'b1011001000
+    Found 10-bit register for signal <horCounter>.
+    Found 1-bit register for signal <hSync>.
+    Found 10-bit register for signal <vertCounter>.
+    Found 1-bit register for signal <vSync>.
+    Found 3-bit register for signal <red>.
+    Found 3-bit register for signal <green>.
+    Found 2-bit register for signal <blue>.
+    Found 2-bit register for signal <oneFourth>.
+    Found 24-bit register for signal <outputRand>.
+    Found 10-bit adder for signal <horCounter[9]_GND_5_o_add_2_OUT> created at line 54.
+    Found 10-bit adder for signal <vertCounter[9]_GND_5_o_add_6_OUT> created at line 64.
+    Found 2-bit adder for signal <oneFourth[1]_GND_5_o_add_69_OUT> created at line 188.
+    Found 3-bit 8-to-1 multiplexer for signal <outputRand[22]_GND_5_o_mux_58_OUT> created at line 95.
+    Found 3-bit 8-to-1 multiplexer for signal <outputRand[11]_GND_5_o_mux_59_OUT> created at line 95.
+    Found 2-bit 8-to-1 multiplexer for signal <outputRand[5]_GND_5_o_mux_60_OUT> created at line 95.
+    Found 10-bit comparator greater for signal <PWR_5_o_horCounter[9]_LessThan_4_o> created at line 56
+    Found 10-bit comparator greater for signal <horCounter[9]_PWR_5_o_LessThan_5_o> created at line 56
+    Found 10-bit comparator greater for signal <GND_5_o_vertCounter[9]_LessThan_8_o> created at line 66
+    Found 10-bit comparator greater for signal <vertCounter[9]_GND_5_o_LessThan_9_o> created at line 66
+    Found 10-bit comparator greater for signal <horCounter[9]_PWR_5_o_LessThan_14_o> created at line 76
+    Found 10-bit comparator greater for signal <vertCounter[9]_GND_5_o_LessThan_15_o> created at line 76
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <vgaSource> synthesized.
+
+Synthesizing Unit <CPU_Set>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v".
+        termination_line = 15'b000000000010110
+        stall = 5'b00000
+        store = 5'b00001
+        add = 5'b00010
+        sub = 5'b00011
+        move = 5'b00100
+        sll = 5'b00101
+        srl = 5'b00110
+        load_hi_reg = 5'b00111
+        load_lo_reg = 5'b01000
+        jump = 5'b01001
+        set_servo = 5'b01010
+        load_cam = 5'b01011
+        move_buffer = 5'b01100
+        bne = 5'b01101
+        beq = 5'b01110
+        slt = 5'b01111
+        AND = 5'b10000
+        OR = 5'b10001
+        NOT = 5'b10010
+        load = 5'b10011
+        loadl = 5'b10100
+        storel = 5'b10101
+        phase0 = 2'b00
+        phase1 = 2'b01
+        phase2 = 2'b10
+        reg0 = 3'b000
+        reg1 = 3'b001
+        reg2 = 3'b010
+        reg3 = 3'b011
+        reg4 = 3'b100
+        reg5 = 3'b101
+        reg6 = 3'b110
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 128-bit register for signal <display>.
+    Found 1-bit register for signal <write_memory>.
+    Found 1-bit register for signal <memory_ready>.
+    Found 1-bit register for signal <r7<15>>.
+    Found 1-bit register for signal <r7<14>>.
+    Found 1-bit register for signal <r7<13>>.
+    Found 1-bit register for signal <r7<12>>.
+    Found 1-bit register for signal <r7<11>>.
+    Found 1-bit register for signal <r7<10>>.
+    Found 1-bit register for signal <r7<9>>.
+    Found 1-bit register for signal <r7<8>>.
+    Found 1-bit register for signal <r7<7>>.
+    Found 1-bit register for signal <r7<6>>.
+    Found 1-bit register for signal <r7<5>>.
+    Found 1-bit register for signal <r7<4>>.
+    Found 1-bit register for signal <r7<3>>.
+    Found 1-bit register for signal <r7<2>>.
+    Found 1-bit register for signal <r7<1>>.
+    Found 1-bit register for signal <r7<0>>.
+    Found 1-bit register for signal <r6<15>>.
+    Found 1-bit register for signal <r6<14>>.
+    Found 1-bit register for signal <r6<13>>.
+    Found 1-bit register for signal <r6<12>>.
+    Found 1-bit register for signal <r6<11>>.
+    Found 1-bit register for signal <r6<10>>.
+    Found 1-bit register for signal <r6<9>>.
+    Found 1-bit register for signal <r6<8>>.
+    Found 1-bit register for signal <r6<7>>.
+    Found 1-bit register for signal <r6<6>>.
+    Found 1-bit register for signal <r6<5>>.
+    Found 1-bit register for signal <r6<4>>.
+    Found 1-bit register for signal <r6<3>>.
+    Found 1-bit register for signal <r6<2>>.
+    Found 1-bit register for signal <r6<1>>.
+    Found 1-bit register for signal <r6<0>>.
+    Found 1-bit register for signal <r5<15>>.
+    Found 1-bit register for signal <r5<14>>.
+    Found 1-bit register for signal <r5<13>>.
+    Found 1-bit register for signal <r5<12>>.
+    Found 1-bit register for signal <r5<11>>.
+    Found 1-bit register for signal <r5<10>>.
+    Found 1-bit register for signal <r5<9>>.
+    Found 1-bit register for signal <r5<8>>.
+    Found 1-bit register for signal <r5<7>>.
+    Found 1-bit register for signal <r5<6>>.
+    Found 1-bit register for signal <r5<5>>.
+    Found 1-bit register for signal <r5<4>>.
+    Found 1-bit register for signal <r5<3>>.
+    Found 1-bit register for signal <r5<2>>.
+    Found 1-bit register for signal <r5<1>>.
+    Found 1-bit register for signal <r5<0>>.
+    Found 1-bit register for signal <r4<15>>.
+    Found 1-bit register for signal <r4<14>>.
+    Found 1-bit register for signal <r4<13>>.
+    Found 1-bit register for signal <r4<12>>.
+    Found 1-bit register for signal <r4<11>>.
+    Found 1-bit register for signal <r4<10>>.
+    Found 1-bit register for signal <r4<9>>.
+    Found 1-bit register for signal <r4<8>>.
+    Found 1-bit register for signal <r4<7>>.
+    Found 1-bit register for signal <r4<6>>.
+    Found 1-bit register for signal <r4<5>>.
+    Found 1-bit register for signal <r4<4>>.
+    Found 1-bit register for signal <r4<3>>.
+    Found 1-bit register for signal <r4<2>>.
+    Found 1-bit register for signal <r4<1>>.
+    Found 1-bit register for signal <r4<0>>.
+    Found 1-bit register for signal <r3<15>>.
+    Found 1-bit register for signal <r3<14>>.
+    Found 1-bit register for signal <r3<13>>.
+    Found 1-bit register for signal <r3<12>>.
+    Found 1-bit register for signal <r3<11>>.
+    Found 1-bit register for signal <r3<10>>.
+    Found 1-bit register for signal <r3<9>>.
+    Found 1-bit register for signal <r3<8>>.
+    Found 1-bit register for signal <r3<7>>.
+    Found 1-bit register for signal <r3<6>>.
+    Found 1-bit register for signal <r3<5>>.
+    Found 1-bit register for signal <r3<4>>.
+    Found 1-bit register for signal <r3<3>>.
+    Found 1-bit register for signal <r3<2>>.
+    Found 1-bit register for signal <r3<1>>.
+    Found 1-bit register for signal <r3<0>>.
+    Found 1-bit register for signal <r2<15>>.
+    Found 1-bit register for signal <r2<14>>.
+    Found 1-bit register for signal <r2<13>>.
+    Found 1-bit register for signal <r2<12>>.
+    Found 1-bit register for signal <r2<11>>.
+    Found 1-bit register for signal <r2<10>>.
+    Found 1-bit register for signal <r2<9>>.
+    Found 1-bit register for signal <r2<8>>.
+    Found 1-bit register for signal <r2<7>>.
+    Found 1-bit register for signal <r2<6>>.
+    Found 1-bit register for signal <r2<5>>.
+    Found 1-bit register for signal <r2<4>>.
+    Found 1-bit register for signal <r2<3>>.
+    Found 1-bit register for signal <r2<2>>.
+    Found 1-bit register for signal <r2<1>>.
+    Found 1-bit register for signal <r2<0>>.
+    Found 1-bit register for signal <r1<15>>.
+    Found 1-bit register for signal <r1<14>>.
+    Found 1-bit register for signal <r1<13>>.
+    Found 1-bit register for signal <r1<12>>.
+    Found 1-bit register for signal <r1<11>>.
+    Found 1-bit register for signal <r1<10>>.
+    Found 1-bit register for signal <r1<9>>.
+    Found 1-bit register for signal <r1<8>>.
+    Found 1-bit register for signal <r1<7>>.
+    Found 1-bit register for signal <r1<6>>.
+    Found 1-bit register for signal <r1<5>>.
+    Found 1-bit register for signal <r1<4>>.
+    Found 1-bit register for signal <r1<3>>.
+    Found 1-bit register for signal <r1<2>>.
+    Found 1-bit register for signal <r1<1>>.
+    Found 1-bit register for signal <r1<0>>.
+    Found 1-bit register for signal <r0<15>>.
+    Found 1-bit register for signal <r0<14>>.
+    Found 1-bit register for signal <r0<13>>.
+    Found 1-bit register for signal <r0<12>>.
+    Found 1-bit register for signal <r0<11>>.
+    Found 1-bit register for signal <r0<10>>.
+    Found 1-bit register for signal <r0<9>>.
+    Found 1-bit register for signal <r0<8>>.
+    Found 1-bit register for signal <r0<7>>.
+    Found 1-bit register for signal <r0<6>>.
+    Found 1-bit register for signal <r0<5>>.
+    Found 1-bit register for signal <r0<4>>.
+    Found 1-bit register for signal <r0<3>>.
+    Found 1-bit register for signal <r0<2>>.
+    Found 1-bit register for signal <r0<1>>.
+    Found 1-bit register for signal <r0<0>>.
+    Found 24-bit register for signal <memory_location>.
+    Found 15-bit register for signal <pc_counter>.
+    Found 11-bit register for signal <jump_amount>.
+    Found 8-bit register for signal <hi_part>.
+    Found 1-bit register for signal <memory_flag>.
+    Found 1-bit register for signal <load_store>.
+    Found 3-bit register for signal <reg_to_store>.
+    Found 16-bit register for signal <word>.
+    Found 16-bit register for signal <memory_input>.
+    Found 2-bit register for signal <phase>.
+    Found 16-bit subtractor for signal <word[7]_word[4]_sub_44_OUT> created at line 240.
+    Found 15-bit subtractor for signal <pc_counter[14]_GND_6_o_sub_369_OUT> created at line 647.
+    Found 2-bit adder for signal <phase[1]_GND_6_o_add_2_OUT> created at line 100.
+    Found 16-bit adder for signal <word[7]_word[4]_add_25_OUT> created at line 206.
+    Found 15-bit adder for signal <pc_counter[14]_GND_6_o_add_370_OUT> created at line 652.
+    Found 15-bit adder for signal <pc_counter[14]_GND_6_o_add_374_OUT> created at line 660.
+    Found 16-bit shifter logical left for signal <r0[15]_word[4]_shift_left_61_OUT> created at line 271
+    Found 16-bit shifter logical left for signal <r1[15]_word[4]_shift_left_62_OUT> created at line 272
+    Found 16-bit shifter logical left for signal <r2[15]_word[4]_shift_left_63_OUT> created at line 273
+    Found 16-bit shifter logical left for signal <r3[15]_word[4]_shift_left_64_OUT> created at line 274
+    Found 16-bit shifter logical left for signal <r4[15]_word[4]_shift_left_65_OUT> created at line 275
+    Found 16-bit shifter logical left for signal <r5[15]_word[4]_shift_left_66_OUT> created at line 276
+    Found 16-bit shifter logical left for signal <r6[15]_word[4]_shift_left_67_OUT> created at line 277
+    Found 16-bit shifter logical left for signal <r7[15]_word[4]_shift_left_68_OUT> created at line 278
+    Found 16-bit shifter logical right for signal <r0[15]_word[4]_shift_right_78_OUT> created at line 295
+    Found 16-bit shifter logical right for signal <r1[15]_word[4]_shift_right_79_OUT> created at line 296
+    Found 16-bit shifter logical right for signal <r2[15]_word[4]_shift_right_80_OUT> created at line 297
+    Found 16-bit shifter logical right for signal <r3[15]_word[4]_shift_right_81_OUT> created at line 298
+    Found 16-bit shifter logical right for signal <r4[15]_word[4]_shift_right_82_OUT> created at line 299
+    Found 16-bit shifter logical right for signal <r5[15]_word[4]_shift_right_83_OUT> created at line 300
+    Found 16-bit shifter logical right for signal <r6[15]_word[4]_shift_right_84_OUT> created at line 301
+    Found 16-bit shifter logical right for signal <r7[15]_word[4]_shift_right_85_OUT> created at line 302
+    Found 16-bit 8-to-1 multiplexer for signal <reg_to_store[2]_r7[15]_wide_mux_4_OUT> created at line 109.
+    Found 16-bit 8-to-1 multiplexer for signal <data_out[10]_r7[15]_wide_mux_7_OUT> created at line 135.
+    Found 16-bit 8-to-1 multiplexer for signal <word[10]_r7[15]_wide_mux_245_OUT> created at line 457.
+    Found 16-bit 8-to-1 multiplexer for signal <n1644> created at line 567.
+    Found 16-bit 8-to-1 multiplexer for signal <n1643> created at line 591.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[15]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[14]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[13]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[12]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[11]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[10]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[9]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[8]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[7]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[6]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[5]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[4]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[3]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[2]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[1]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_86_OUT[0]> created at line 294.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[15]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[14]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[13]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[12]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[11]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[10]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[9]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[8]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[7]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[6]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[5]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[4]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[3]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[2]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[1]> created at line 270.
+    Found 1-bit 8-to-1 multiplexer for signal <word[7]_r7[15]_wide_mux_69_OUT[0]> created at line 270.
+    Found 15-bit comparator greater for signal <GND_6_o_pc_counter[14]_LessThan_2_o> created at line 97
+    Found 16-bit comparator equal for signal <n0229> created at line 445
+    Found 16-bit comparator greater for signal <word[7]_word[4]_LessThan_259_o> created at line 517
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 355 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred 1422 Multiplexer(s).
+	inferred  16 Combinational logic shifter(s).
+Unit <CPU_Set> synthesized.
+
+Synthesizing Unit <phy_controller>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v".
+        startEthernetHeader = 15'b000000000011001
+        endEthernetHeader = 15'b000000000111001
+        startWrtPos = 32'b00000000000000000000000000111010
+WARNING:Xst:647 - Input <fromMemory> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <collision_detect> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <carrier_sense> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <trans_CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <recieve_ERR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <recieve_data_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <recieve_CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" line 62: Output port <from_MDI> of the instance <MdIo> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'transmit', unconnected in block 'phy_controller', is tied to its initial value (0000).
+WARNING:Xst:2935 - Signal 'toMemory<15:12>', unconnected in block 'phy_controller', is tied to its initial value (0000).
+WARNING:Xst:2935 - Signal 'toMemory<7:0>', unconnected in block 'phy_controller', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'readLocation', unconnected in block 'phy_controller', is tied to its initial value (000000000011001).
+WARNING:Xst:2935 - Signal 'writeLocation', unconnected in block 'phy_controller', is tied to its initial value (000000000111010).
+WARNING:Xst:2935 - Signal 'trans_error', unconnected in block 'phy_controller', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'trans_enabled', unconnected in block 'phy_controller', is tied to its initial value (0).
+    Found 12-bit register for signal <setupCounter>.
+    Found 1-bit register for signal <reset>.
+    Found 1-bit register for signal <toMemory<11>>.
+    Found 1-bit register for signal <toMemory<10>>.
+    Found 1-bit register for signal <toMemory<9>>.
+    Found 1-bit register for signal <toMemory<8>>.
+    Found 1-bit register for signal <write>.
+    Found 12-bit adder for signal <setupCounter[11]_GND_7_o_add_3_OUT> created at line 77.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <phy_controller> synthesized.
+
+Synthesizing Unit <mdioControl>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v".
+        setup = 128'b11111111111111111111111111111111010100000000000000000000000000001111111111111111111111111111111101010000000000001000000000000000
+        readReg0 = 64'b1111111111111111111111111111111101100000000000000000000000000000
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <triggerReady>.
+    Found 1-bit register for signal <setReadySoft>.
+    Found 34-bit register for signal <softCounter>.
+    Found 1-bit register for signal <out>.
+    Found 16-bit register for signal <from_MDI>.
+    Found 1-bit register for signal <MDI>.
+    Found 6-bit register for signal <countTo40>.
+    Found 1-bit register for signal <ready>.
+    Found 1-bit register for signal <MDO>.
+    Found 7-bit subtractor for signal <counter[6]_GND_8_o_sub_15_OUT> created at line 91.
+    Found 34-bit adder for signal <softCounter[33]_GND_8_o_add_5_OUT> created at line 73.
+    Found 6-bit adder for signal <countTo40[5]_GND_8_o_add_35_OUT> created at line 109.
+    Found 128x1-bit Read Only RAM for signal <counter[6]_PWR_10_o_Mux_1_o>
+    Found 64x1-bit Read Only RAM for signal <counter[5]_PWR_10_o_Mux_8_o>
+    Found 1-bit tristate buffer for signal <MDIO> created at line 48
+    Found 7-bit comparator greater for signal <GND_8_o_counter[6]_LessThan_8_o> created at line 78
+    Found 7-bit comparator lessequal for signal <n0013> created at line 90
+    Found 6-bit comparator lessequal for signal <countTo40[5]_PWR_10_o_LessThan_35_o> created at line 108
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  69 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  21 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <mdioControl> synthesized.
+
+Synthesizing Unit <mdCLK_gen>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\mdCLK_gen.v".
+    Found 5-bit register for signal <countTo20>.
+    Found 1-bit register for signal <mdCLK>.
+    Found 5-bit adder for signal <countTo20[4]_GND_9_o_add_2_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+Unit <mdCLK_gen> synthesized.
+
+Synthesizing Unit <Control>.
+    Related source file is "F:\CS 3710\Cotter1 Project\Cotter1\Control.v".
+WARNING:Xst:647 - Input <memory_locationA<23:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Control> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x1-bit single-port Read Only RAM                   : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+ 64x1-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 62
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 1
+ 15-bit adder                                          : 2
+ 15-bit subtractor                                     : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 9
+ 2-bit adder                                           : 3
+ 24-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 4-bit adder                                           : 35
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+# Registers                                            : 200
+ 1-bit register                                        : 165
+ 10-bit register                                       : 2
+ 11-bit register                                       : 2
+ 12-bit register                                       : 1
+ 128-bit register                                      : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 4
+ 17-bit register                                       : 9
+ 2-bit register                                        : 4
+ 24-bit register                                       : 3
+ 3-bit register                                        : 3
+ 34-bit register                                       : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 65
+ 1-bit comparator equal                                : 9
+ 10-bit comparator greater                             : 6
+ 15-bit comparator greater                             : 1
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator greater                             : 9
+ 3-bit comparator greater                              : 5
+ 4-bit comparator greater                              : 30
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1495
+ 1-bit 2-to-1 multiplexer                              : 1374
+ 1-bit 8-to-1 multiplexer                              : 32
+ 11-bit 2-to-1 multiplexer                             : 5
+ 15-bit 2-to-1 multiplexer                             : 3
+ 16-bit 2-to-1 multiplexer                             : 18
+ 16-bit 8-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 3
+ 2-bit 8-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 7
+ 3-bit 8-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 35
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+# Logic shifters                                       : 16
+ 16-bit shifter logical left                           : 8
+ 16-bit shifter logical right                          : 8
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 4
+ 2-bit xor2                                            : 1
+ 3-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/MemoryCore.ngc>.
+Loading core <MemoryCore> for timing and area information for instance <memory>.
+WARNING:Xst:1293 - FF/Latch <write> has a constant value of 0 in block <pleaseWork>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <memory_location_15> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_16> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_17> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_18> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_19> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_20> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_21> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_22> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <memory_location_23> of sequential type is unconnected in block <processor>.
+
+Synthesizing (advanced) Unit <CPU_Set>.
+The following registers are absorbed into counter <phase>: 1 register on signal <phase>.
+Unit <CPU_Set> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Debouncer>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mdCLK_gen>.
+The following registers are absorbed into counter <countTo20>: 1 register on signal <countTo20>.
+Unit <mdCLK_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mdioControl>.
+The following registers are absorbed into counter <countTo40>: 1 register on signal <countTo40>.
+The following registers are absorbed into counter <softCounter>: 1 register on signal <softCounter>.
+INFO:Xst:3231 - The small RAM <Mram_counter[6]_PWR_10_o_Mux_1_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 1-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_counter[5]_PWR_10_o_Mux_8_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter<5:0>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <mdioControl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <phy_controller>.
+The following registers are absorbed into counter <setupCounter>: 1 register on signal <setupCounter>.
+Unit <phy_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vgaSource>.
+The following registers are absorbed into counter <oneFourth>: 1 register on signal <oneFourth>.
+The following registers are absorbed into counter <horCounter>: 1 register on signal <horCounter>.
+The following registers are absorbed into counter <vertCounter>: 1 register on signal <vertCounter>.
+Unit <vgaSource> synthesized (advanced).
+
+Synthesizing (advanced) Unit <wired_together>.
+The following registers are absorbed into counter <slowSeg>: 1 register on signal <slowSeg>.
+The following registers are absorbed into counter <segCounter>: 1 register on signal <segCounter>.
+The following registers are absorbed into counter <milDiv>: 1 register on signal <milDiv>.
+The following registers are absorbed into counter <timerCount>: 1 register on signal <timerCount>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0110> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <segCounter>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sevenSeg4>     |          |
+    -----------------------------------------------------------------------
+Unit <wired_together> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x1-bit single-port distributed Read Only RAM       : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 64x1-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 41
+ 15-bit adder                                          : 2
+ 15-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 35
+ 7-bit subtractor                                      : 1
+# Counters                                             : 21
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 9
+ 2-bit up counter                                      : 3
+ 24-bit up counter                                     : 1
+ 34-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 441
+ Flip-Flops                                            : 441
+# Comparators                                          : 65
+ 1-bit comparator equal                                : 9
+ 10-bit comparator greater                             : 6
+ 15-bit comparator greater                             : 1
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator greater                             : 9
+ 3-bit comparator greater                              : 5
+ 4-bit comparator greater                              : 30
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1493
+ 1-bit 2-to-1 multiplexer                              : 1372
+ 1-bit 8-to-1 multiplexer                              : 32
+ 11-bit 2-to-1 multiplexer                             : 5
+ 15-bit 2-to-1 multiplexer                             : 3
+ 16-bit 2-to-1 multiplexer                             : 18
+ 16-bit 8-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 3
+ 2-bit 8-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 7
+ 3-bit 8-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 35
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+# Logic shifters                                       : 16
+ 16-bit shifter logical left                           : 8
+ 16-bit shifter logical right                          : 8
+# Xors                                                 : 7
+ 1-bit xor2                                            : 4
+ 2-bit xor2                                            : 1
+ 3-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <write> has a constant value of 0 in block <phy_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <softCounter_21> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_22> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_23> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_24> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_25> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_26> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_27> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_28> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_29> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_30> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_31> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_32> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <softCounter_33> of sequential type is unconnected in block <mdioControl>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_15> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_14> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_13> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_12> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_11> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_10> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_9> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_8> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_7> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_6> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_5> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_4> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_3> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_2> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_1> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/from_MDI_0> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <pleaseWork/MdIo/MDI> of sequential type is unconnected in block <wired_together>.
+
+Optimizing unit <wired_together> ...
+
+Optimizing unit <vgaSource> ...
+
+Optimizing unit <CPU_Set> ...
+
+Optimizing unit <bin16ToBCD> ...
+WARNING:Xst:2677 - Node <processor/memory_location_23> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_22> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_21> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_20> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_19> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_18> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_17> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_16> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/memory_location_15> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_7> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_6> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_5> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_4> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_3> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_2> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_1> of sequential type is unconnected in block <wired_together>.
+WARNING:Xst:2677 - Node <processor/hi_part_0> of sequential type is unconnected in block <wired_together>.
+INFO:Xst:2261 - The FF/Latch <slowSeg_0> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/oneFourth_0> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_1> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/oneFourth_1> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_2> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/horCounter_0> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_3> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/horCounter_1> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_4> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/horCounter_2> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_5> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/horCounter_3> 
+INFO:Xst:2261 - The FF/Latch <slowSeg_6> in Unit <wired_together> is equivalent to the following FF/Latch, which will be removed : <snowVGA/horCounter_4> 
+INFO:Xst:2261 - The FF/Latch <processor/pc_counter_14> in Unit <wired_together> is equivalent to the following 3 FFs/Latches, which will be removed : <processor/pc_counter_13> <processor/pc_counter_12> <processor/pc_counter_11> 
+INFO:Xst:3203 - The FF/Latch <slowSeg_0> in Unit <wired_together> is the opposite to the following FF/Latch, which will be removed : <pleaseWork/MdIo/md_CLK_gen/countTo20_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block wired_together, actual ratio is 29.
+FlipFlop processor/word_1 has been replicated 7 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <wired_together> :
+	Found 9-bit shift register for signal <snowVGA/outputRand_20>.
+	Found 4-bit shift register for signal <snowVGA/outputRand_9>.
+	Found 4-bit shift register for signal <snowVGA/outputRand_4>.
+Unit <wired_together> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 659
+ Flip-Flops                                            : 659
+# Shift Registers                                      : 3
+ 4-bit shift register                                  : 2
+ 9-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : wired_together.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3099
+#      GND                         : 2
+#      INV                         : 39
+#      LUT1                        : 260
+#      LUT2                        : 75
+#      LUT3                        : 73
+#      LUT4                        : 146
+#      LUT5                        : 589
+#      LUT6                        : 1089
+#      MUXCY                       : 327
+#      MUXF7                       : 168
+#      VCC                         : 2
+#      XORCY                       : 329
+# FlipFlops/Latches                : 672
+#      FD                          : 54
+#      FDE                         : 399
+#      FDR                         : 156
+#      FDRE                        : 63
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
+# Shift Registers                  : 3
+#      SRLC16E                     : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 68
+#      IBUF                        : 13
+#      OBUF                        : 54
+#      OBUFT                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             672  out of  18224     3%  
+ Number of Slice LUTs:                 2274  out of   9112    24%  
+    Number used as Logic:              2271  out of   9112    24%  
+    Number used as Memory:                3  out of   2176     0%  
+       Number used as SRL:                3
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2439
+   Number with an unused Flip Flop:    1767  out of   2439    72%  
+   Number with an unused LUT:           165  out of   2439     6%  
+   Number of fully used LUT-FF pairs:   507  out of   2439    20%  
+   Number of unique control sets:        62
+
+IO Utilization: 
+ Number of IOs:                          80
+ Number of bonded IOBs:                  69  out of    232    29%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 675   |
+pleaseWork/MdIo/md_CLK_gen/mdCLK   | BUFG                   | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.565ns (Maximum Frequency: 132.193MHz)
+   Minimum input arrival time before clock: 3.566ns
+   Maximum output required time after clock: 20.323ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.565ns (frequency: 132.193MHz)
+  Total number of paths / destination ports: 170838 / 2393
+-------------------------------------------------------------------------
+Delay:               7.565ns (Levels of Logic = 7)
+  Source:            memory/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (FF)
+  Destination:       processor/memory_input_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: memory/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 to processor/memory_input_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            128   0.447   2.315  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_2 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<2>)
+     LUT6:I0->O            1   0.203   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_843 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_843)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_314 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_314)
+     MUXF7:I1->O          36   0.140   1.453  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_13 (douta<8>)
+     end scope: 'memory/memory:douta<8>'
+     LUT6:I4->O            1   0.203   0.684  processor/Mmux_data_out[10]_r7[15]_wide_mux_7_OUT_3 (processor/Mmux_data_out[10]_r7[15]_wide_mux_7_OUT_3)
+     LUT5:I3->O            1   0.203   0.580  processor/Mmux_memory_input[15]_reg_to_store[2]_mux_13_OUT17 (processor/memory_input[15]_reg_to_store[2]_mux_13_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  processor/memory_input_0_dpot (processor/memory_input_0_dpot)
+     FDE:D                     0.102          processor/memory_input_0
+    ----------------------------------------
+    Total                      7.565ns (1.706ns logic, 5.859ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pleaseWork/MdIo/md_CLK_gen/mdCLK'
+  Clock period: 3.596ns (frequency: 278.083MHz)
+  Total number of paths / destination ports: 350 / 61
+-------------------------------------------------------------------------
+Delay:               3.596ns (Levels of Logic = 2)
+  Source:            pleaseWork/MdIo/counter_0 (FF)
+  Destination:       pleaseWork/MdIo/MDO (FF)
+  Source Clock:      pleaseWork/MdIo/md_CLK_gen/mdCLK rising
+  Destination Clock: pleaseWork/MdIo/md_CLK_gen/mdCLK rising
+
+  Data Path: pleaseWork/MdIo/counter_0 to pleaseWork/MdIo/MDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.447   1.085  pleaseWork/MdIo/counter_0 (pleaseWork/MdIo/counter_0)
+     LUT4:I1->O            3   0.205   0.755  pleaseWork/MdIo/_n013641 (pleaseWork/MdIo/_n0136_bdd4)
+     LUT6:I4->O            1   0.203   0.579  pleaseWork/MdIo/_n0210_inv2 (pleaseWork/MdIo/_n0210_inv)
+     FDE:CE                    0.322          pleaseWork/MdIo/MDO
+    ----------------------------------------
+    Total                      3.596ns (1.177ns logic, 2.419ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 157 / 157
+-------------------------------------------------------------------------
+Offset:              3.566ns (Levels of Logic = 2)
+  Source:            buttons<4> (PAD)
+  Destination:       debouncerbt5/counter_1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: buttons<4> to debouncerbt5/counter_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  buttons_4_IBUF (buttons_4_IBUF)
+     LUT6:I4->O           17   0.203   1.027  debouncerbt5/Mcount_counter_val11 (debouncerbt5/Mcount_counter_val)
+     FDR:R                     0.430          debouncerbt5/counter_0
+    ----------------------------------------
+    Total                      3.566ns (1.855ns logic, 1.711ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12147958 / 48
+-------------------------------------------------------------------------
+Offset:              20.323ns (Levels of Logic = 15)
+  Source:            timerCount_14 (FF)
+  Destination:       sevenSegE (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: timerCount_14 to sevenSegE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            14   0.447   1.302  timerCount_14 (timerCount_14)
+     LUT5:I0->O            7   0.203   1.138  timerToDec/Mmux_GND_4_o_GND_4_o_mux_8_OUT21 (timerToDec/Madd_GND_4_o_GND_4_o_add_10_OUT_lut<2>)
+     LUT6:I0->O            5   0.203   1.059  timerToDec/Mmux_GND_4_o_GND_4_o_mux_17_OUT2 (timerToDec/Madd_GND_4_o_GND_4_o_add_22_OUT_lut<2>)
+     LUT5:I0->O           13   0.203   1.161  timerToDec/Mmux_GND_4_o_GND_4_o_mux_23_OUT41 (timerToDec/Madd_GND_4_o_GND_4_o_add_31_OUT_cy<0>)
+     LUT5:I2->O            5   0.205   1.059  timerToDec/GND_4_o_GND_4_o_LessThan_40_o (timerToDec/GND_4_o_GND_4_o_LessThan_40_o)
+     LUT5:I0->O            3   0.203   0.651  timerToDec/Mmux_GND_4_o_GND_4_o_mux_41_OUT31 (timerToDec/Madd_GND_4_o_GND_4_o_add_49_OUT_lut<3>)
+     LUT6:I5->O            5   0.205   0.962  timerToDec/GND_4_o_GND_4_o_LessThan_49_o1 (timerToDec/GND_4_o_GND_4_o_LessThan_49_o)
+     LUT6:I2->O            6   0.203   1.089  timerToDec/GND_4_o_GND_4_o_LessThan_58_o3 (timerToDec/GND_4_o_GND_4_o_LessThan_58_o)
+     LUT5:I0->O            4   0.203   0.931  timerToDec/Mmux_GND_4_o_GND_4_o_mux_59_OUT31 (timerToDec/Madd_GND_4_o_GND_4_o_add_70_OUT_lut<3>)
+     LUT5:I1->O            6   0.203   1.089  timerToDec/Mmux_GND_4_o_GND_4_o_mux_71_OUT41 (timerToDec/Madd_GND_4_o_GND_4_o_add_85_OUT_cy<0>)
+     LUT6:I1->O            4   0.203   1.048  timerToDec/GND_4_o_GND_4_o_LessThan_85_o3 (timerToDec/GND_4_o_GND_4_o_LessThan_85_o)
+     LUT6:I0->O            1   0.203   0.684  segControl/Mmux_character35 (segControl/Mmux_character34)
+     LUT6:I4->O            2   0.203   0.617  segControl/Mmux_character36 (segControl/Mmux_character35)
+     LUT3:I2->O            6   0.205   1.089  segControl/Mmux_character37 (segControl/character<2>)
+     LUT6:I1->O            1   0.203   0.579  segControl/e1 (sevenSegE_OBUF)
+     OBUF:I->O                 2.571          sevenSegE_OBUF (sevenSegE)
+    ----------------------------------------
+    Total                     20.323ns (5.866ns logic, 14.457ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pleaseWork/MdIo/md_CLK_gen/mdCLK'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.419ns (Levels of Logic = 2)
+  Source:            pleaseWork/MdIo/out (FF)
+  Destination:       MDIO (PAD)
+  Source Clock:      pleaseWork/MdIo/md_CLK_gen/mdCLK rising
+
+  Data Path: pleaseWork/MdIo/out to MDIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  pleaseWork/MdIo/out (pleaseWork/MdIo/out)
+     INV:I->O              1   0.206   0.579  pleaseWork/MdIo/out_inv1_INV_0 (pleaseWork/MdIo/out_inv)
+     OBUFT:T->O                2.571          MDIO_OBUFT (MDIO)
+    ----------------------------------------
+    Total                      4.419ns (3.224ns logic, 1.195ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |    7.565|         |         |         |
+pleaseWork/MdIo/md_CLK_gen/mdCLK|    2.731|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pleaseWork/MdIo/md_CLK_gen/mdCLK
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |    3.381|         |         |         |
+pleaseWork/MdIo/md_CLK_gen/mdCLK|    3.596|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 52.29 secs
+ 
+--> 
+
+Total memory usage is 345320 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  102 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

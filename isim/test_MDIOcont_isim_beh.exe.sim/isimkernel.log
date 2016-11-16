@@ -1,0 +1,10 @@
+Command line:
+   test_MDIOcont_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61680
+
+Tue Nov 15 14:53:54 2016
+
+
+ Elaboration Time: 0.046875 sec

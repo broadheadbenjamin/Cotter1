@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\mdCLK_gen.v" Line 26: Redeclaration of ansi port <arg fmt="%s" index="1">mdCLK</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v" Line 33: Redeclaration of ansi port <arg fmt="%s" index="1">from_MDI</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\mdioControl.v" Line 38: Redeclaration of ansi port <arg fmt="%s" index="1">ready</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 48: Redeclaration of ansi port <arg fmt="%s" index="1">transmit</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 50: Redeclaration of ansi port <arg fmt="%s" index="1">trans_error</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 51: Redeclaration of ansi port <arg fmt="%s" index="1">trans_enabled</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 52: Redeclaration of ansi port <arg fmt="%s" index="1">reset</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 54: Redeclaration of ansi port <arg fmt="%s" index="1">toMemory</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 55: Redeclaration of ansi port <arg fmt="%s" index="1">readLocation</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 56: Redeclaration of ansi port <arg fmt="%s" index="1">writeLocation</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 57: Redeclaration of ansi port <arg fmt="%s" index="1">write</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v" Line 79: Redeclaration of ansi port <arg fmt="%s" index="1">write_memory</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 73: Redeclaration of ansi port <arg fmt="%s" index="1">data_out</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 104: Assignment to <arg fmt="%s" index="1">extraBits</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\CPU_Set.v" Line 95: Assignment to <arg fmt="%s" index="1">right_servo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 49: Using initial value of <arg fmt="%s" index="1">phase</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 62: Assignment to <arg fmt="%s" index="1">from_MDI</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v" Line 114: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\ipcore_dir\MemoryCore.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">MemoryCore</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 74: Net &lt;<arg fmt="%s" index="1">camera[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v" Line 75: Net &lt;<arg fmt="%s" index="1">move_command[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%d" index="2">95</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">debouncerbt1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">wired_together</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%d" index="2">96</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">debouncerbt2</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">wired_together</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%d" index="2">97</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">debouncerbt3</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">wired_together</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%d" index="2">98</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">debouncerbt4</arg>&gt; of block &lt;<arg fmt="%s" index="4">Debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">wired_together</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLK25</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">wireOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">debouncerbt1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">wireOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">debouncerbt2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%s" index="2">97</arg>: Output port &lt;<arg fmt="%s" index="3">wireOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">debouncerbt3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">wireOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">debouncerbt4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\wired_together.v</arg>&quot; line <arg fmt="%s" index="2">104</arg>: Output port &lt;<arg fmt="%s" index="3">tenThousands</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">timerToDec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">camera</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">move_command</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fromMemory</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">collision_detect</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">carrier_sense</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">trans_CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">recieve_ERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">recieve_data_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">recieve_CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">F:\CS 3710\Cotter1 Project\Cotter1\phy_controller.v</arg>&quot; line <arg fmt="%s" index="2">62</arg>: Output port &lt;<arg fmt="%s" index="3">from_MDI</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MdIo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">transmit</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">toMemory&lt;15:12&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">toMemory&lt;7:0&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">readLocation</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000011001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">writeLocation</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000111010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">trans_error</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">trans_enabled</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">phy_controller</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">memory_locationA&lt;23:15&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pleaseWork</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory_location_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">processor</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_counter[6]_PWR_10_o_Mux_1_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_counter[5]_PWR_10_o_Mux_8_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0110</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">write</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">phy_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">softCounter_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mdioControl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/from_MDI_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pleaseWork/MdIo/MDI</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/memory_location_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">processor/hi_part_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wired_together</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/oneFourth_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/oneFourth_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/horCounter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/horCounter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/horCounter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/horCounter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;snowVGA/horCounter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">processor/pc_counter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;processor/pc_counter_13&gt; &lt;processor/pc_counter_12&gt; &lt;processor/pc_counter_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slowSeg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">wired_together</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pleaseWork/MdIo/md_CLK_gen/countTo20_0&gt; </arg>
+</msg>
+
+</messages>
+
